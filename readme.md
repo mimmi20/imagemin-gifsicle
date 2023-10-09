@@ -1,6 +1,10 @@
-# imagemin-gifsicle ![GitHub Actions Status](https://github.com/imagemin/imagemin-gifsicle/workflows/test/badge.svg?branch=main)
+# imagemin-gifsicle 
+
+[![test](https://github.com/localnerve/imagemin-gifsicle/actions/workflows/test.yml/badge.svg)](https://github.com/localnerve/imagemin-gifsicle/actions/workflows/test.yml)
 
 > Imagemin plugin for [Gifsicle](https://www.lcdf.org/gifsicle/)
+
+> Updated, maintained fork of [imagemin-gifsicle](https://github.com/imagemin/imagemin-gifsicle)
 
 ## Install
 

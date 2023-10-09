@@ -1,12 +1,11 @@
 {
-	"name": "imagemin-gifsicle",
+	"name": "@localnerve/imagemin-gifsicle",
 	"version": "8.0.0",
 	"description": "Imagemin plugin for Gifsicle",
 	"license": "MIT",
-	"repository": "imagemin/imagemin-gifsicle",
+	"repository": "localnerve/imagemin-gifsicle",
 	"type": "module",
 	"exports": "./index.js",
-	"funding": "https://github.com/imagemin/imagemin-gifsicle?sponsor=1",
 	"engines": {
 		"node": ">=16.0.0"
 	},
