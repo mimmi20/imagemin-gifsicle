@@ -1,13 +1,13 @@
 {
 	"name": "@localnerve/imagemin-gifsicle",
-	"version": "8.0.2",
+	"version": "9.0.0",
 	"description": "Imagemin plugin for Gifsicle",
 	"license": "MIT",
 	"repository": "localnerve/imagemin-gifsicle",
 	"type": "module",
 	"exports": "./index.js",
 	"engines": {
-		"node": ">=16.0.0"
+		"node": ">=18"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"ava": "^6.1.2",
-		"xo": "^0.57.0"
+		"xo": "^0.58.0"
 	},
 	"overrides": {
     "download": "npm:@xhmikosr/downloader",
