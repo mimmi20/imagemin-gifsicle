@@ -27,7 +27,7 @@ const main = (options = {}) => async input => {
 	}
 
 	const {stdout} = await execa(gifsicle, args, {
-		encoding: null,
+		encoding: 'buffer',
 		maxBuffer: Number.POSITIVE_INFINITY,
 		input,
 	});
