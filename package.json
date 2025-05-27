@@ -1,6 +1,6 @@
 {
 	"name": "@localnerve/imagemin-gifsicle",
-	"version": "10.3.2",
+	"version": "10.4.0",
 	"description": "Imagemin plugin for Gifsicle",
 	"license": "MIT",
 	"repository": "localnerve/imagemin-gifsicle",
@@ -28,18 +28,18 @@
 		"optimize"
 	],
 	"dependencies": {
-		"execa": "^9.5.3",
+		"execa": "^9.6.0",
 		"gifsicle": "^7.0.1",
 		"is-gif": "^4.0.1"
 	},
 	"devDependencies": {
 		"ava": "^6.3.0",
-		"xo": "^0.60.0"
+		"xo": "^0.61.1"
 	},
 	"overrides": {
     "download": "npm:@xhmikosr/downloader",
     "bin-wrapper": "npm:@xhmikosr/bin-wrapper",
 		"bin-build": "npm:@localnerve/bin-build",
-		"webpack": "^5.99.8"
+		"webpack": "^5.99.9"
 	}
 }
