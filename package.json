@@ -7,7 +7,7 @@
 	"type": "module",
 	"exports": "./index.js",
 	"engines": {
-		"node": "^18.19.0 || >=20.5.0"
+		"node": ">=20.5.0"
 	},
 	"scripts": {
 		"debug": "node --inspect-brk node_modules/.bin/ava",
@@ -29,16 +29,16 @@
 	],
 	"dependencies": {
 		"execa": "^9.6.0",
-		"gifsicle": "^7.0.1",
+		"gifsicle": "github:mimmi20/gifsicle-bin#main",
 		"is-gif": "^4.0.1"
 	},
 	"devDependencies": {
-		"ava": "^6.3.0",
-		"xo": "^0.61.1"
+		"ava": "^6.4.0",
+		"xo": "^1.1.0"
 	},
 	"overrides": {
-    "download": "npm:@xhmikosr/downloader",
-    "bin-wrapper": "npm:@xhmikosr/bin-wrapper",
+		"download": "npm:@xhmikosr/downloader",
+		"bin-wrapper": "npm:@xhmikosr/bin-wrapper",
 		"bin-build": "npm:@localnerve/bin-build",
 		"webpack": "^5.99.9"
 	}
