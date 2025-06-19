@@ -8,14 +8,16 @@
 
 ## Install
 
-```
-$ npm install imagemin-gifsicle
+```shell
+npm install imagemin-gifsicle
 ```
 
 ### Install Prerequisites
+
 Most latest OS images come with what is required to install the binary, but Macos requires the following:
-```
-$ brew install autoconf automake libtool
+
+```shell
+brew install autoconf automake libtool
 ```
 
 ## Usage
@@ -25,14 +27,14 @@ import imagemin from 'imagemin';
 import imageminGifsicle from 'imagemin-gifsicle';
 
 (async () => {
-	await imagemin(['images/*.gif'], {
-		destination: 'build/images',
-		plugins: [
-			imageminGifsicle()
-		]
-	});
+  await imagemin(['images/*.gif'], {
+    destination: 'build/images',
+    plugins: [
+      imageminGifsicle()
+    ]
+  });
 
-	console.log('Images optimized');
+  console.log('Images optimized');
 })();
 ```
 

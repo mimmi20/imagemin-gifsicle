@@ -29,7 +29,7 @@
 	],
 	"dependencies": {
 		"execa": "^9.6.0",
-		"gifsicle": "github:mimmi20/gifsicle-bin#main",
+		"gifsicle": "github:mimmi20/gifsicle-bin#master",
 		"is-gif": "^4.0.1"
 	},
 	"devDependencies": {
