@@ -1,45 +1,59 @@
 {
-	"name": "@localnerve/imagemin-gifsicle",
-	"version": "10.4.0",
-	"description": "Imagemin plugin for Gifsicle",
-	"license": "MIT",
-	"repository": "localnerve/imagemin-gifsicle",
-	"type": "module",
-	"exports": "./index.js",
-	"engines": {
-		"node": ">=20.5.0"
-	},
-	"scripts": {
-		"debug": "node --inspect-brk node_modules/.bin/ava",
-		"test": "xo && ava"
-	},
-	"files": [
-		"index.js"
-	],
-	"keywords": [
-		"compress",
-		"gif",
-		"gifsicle",
-		"gulpplugin",
-		"image",
-		"imageminplugin",
-		"img",
-		"minify",
-		"optimize"
-	],
-	"dependencies": {
-		"execa": "^9.6.0",
-		"gifsicle": "github:mimmi20/gifsicle-bin#master",
-		"is-gif": "^4.0.1"
-	},
-	"devDependencies": {
-		"ava": "^6.4.0",
-		"xo": "^1.1.0"
-	},
-	"overrides": {
-		"download": "npm:@xhmikosr/downloader",
-		"bin-wrapper": "npm:@xhmikosr/bin-wrapper",
-		"bin-build": "npm:@localnerve/bin-build",
-		"webpack": "^5.99.9"
-	}
+  "name": "@localnerve/imagemin-gifsicle",
+  "version": "10.4.0",
+  "description": "Imagemin plugin for Gifsicle",
+  "license": "MIT",
+  "repository": "localnerve/imagemin-gifsicle",
+  "type": "module",
+  "exports": "./index.js",
+  "engines": {
+    "node": ">=20.5.0"
+  },
+  "scripts": {
+    "debug": "node --inspect-brk node_modules/.bin/ava",
+    "test": "ava",
+    "prettier": "prettier --config prettier.config.mjs --check index.js test.js eslint.config.mjs prettier.config.mjs",
+    "prettier-fix": "prettier --config prettier.config.mjs --write index.js test.js eslint.config.mjs prettier.config.mjs",
+    "eslint": "eslint . --config eslint.config.mjs",
+    "eslint-fix": "eslint . --config eslint.config.mjs --fix"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "compress",
+    "gif",
+    "gifsicle",
+    "gulpplugin",
+    "image",
+    "imageminplugin",
+    "img",
+    "minify",
+    "optimize"
+  ],
+  "dependencies": {
+    "execa": "^9.6.0",
+    "gifsicle": "github:mimmi20/gifsicle-bin#master",
+    "is-gif": "^4.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "ava": "^6.4.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "globals": "^16.2.0",
+    "is-progressive": "^5.0.1",
+    "prettier": "^3.5.3",
+    "prettier-eslint": "^16.4.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.0"
+  },
+  "overrides": {
+    "download": "npm:@xhmikosr/downloader",
+    "bin-wrapper": "npm:@xhmikosr/bin-wrapper",
+    "bin-build": "npm:@localnerve/bin-build",
+    "webpack": "^5.99.9",
+    "eslint": "$eslint"
+  }
 }
