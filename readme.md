@@ -2,8 +2,7 @@
 
 [![test](https://github.com/localnerve/imagemin-gifsicle/actions/workflows/test.yml/badge.svg)](https://github.com/localnerve/imagemin-gifsicle/actions/workflows/test.yml)
 
-> Imagemin plugin for [Gifsicle](https://www.lcdf.org/gifsicle/)
-
+> Imagemin plugin for [Gifsicle](https://www.lcdf.org/gifsicle/)\
 > Updated, maintained fork of [imagemin-gifsicle](https://github.com/imagemin/imagemin-gifsicle)
 
 ## Install
