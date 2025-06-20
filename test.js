@@ -1,20 +1,20 @@
-import {Buffer} from 'node:buffer';
-import {promises as fs} from 'node:fs';
+import { Buffer } from 'node:buffer';
+import { promises as fs } from 'node:fs';
 import isGif from 'is-gif';
 import test from 'ava';
 import imageminGifsicle from './index.js';
 
-test('Buffer', async t => {
-	const buf = await fs.readFile(new URL('fixture.gif', import.meta.url));
-	const data = await imageminGifsicle()(buf);
+test('Buffer', async (t) => {
+  const buf = await fs.readFile(new URL('fixture.gif', import.meta.url));
+  const data = await imageminGifsicle()(buf);
 
-	t.true(data.length < buf.length);
-	t.true(isGif(data));
+  t.true(data.length < buf.length);
+  t.true(isGif(data));
 });
 
-test('Buffer - non-binary', async t => {
-	const buf = Buffer.from('string');
-	const data = await imageminGifsicle()(buf);
+test('Buffer - non-binary', async (t) => {
+  const buf = Buffer.from('string');
+  const data = await imageminGifsicle()(buf);
 
-	t.is(data.toString(), 'string');
+  t.is(data.toString(), 'string');
 });
